@@ -1,7 +1,65 @@
-<html>
-    <head>
-        <title>
-            
-        </title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 17 flex properties</title>
+    <style>
+        .profile-container{
+
+            background-color: rgb(224, 201, 170);
+            display: flex;
+            flex-direction: row;
+          /*  justify-content: space-around;  */
+            align-items: start;
+            padding: 50px;
+
+        }
+        .profile-card{
+            height: 200px;
+            width: 200px;
+            background-color: lightgoldenrodyellow;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 130px;
+            margin: 10px;
+
+        }
+        .profile-pic{
+            height: 80px;
+            width: 80px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            border: 1px solid black;
+            left: 60px;
+            top: -60px;
+        }
+        .profile-name{
+           text-align: left;
+
+            position: relative;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-card">
+            <img src="./assign17img/f2.jpeg" alt="lotus photo" class="profile-pic">
+            <h1 class="profile-name">Lotus</h1>
+        </div>
+
+        <div class="profile-card">
+            <img src="./assign17img/f8.jpeg" alt="hibiscus photo" class="profile-pic">
+            <h1 class="profile-name">Hibiscus</h1>
+        </div>
+
+        <div class="profile-card">
+            <img src="./assign17img/f5.jpeg" alt="shevanti photo" class="profile-pic">
+            <h1 class="profile-name">Shevanti</h1>
+        </div>
+
+    </div>
+</body>
 </html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment-16</title>
+    <style>
+        .head {
+            width: 100%;
+            height: 400px;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #763737;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+
+        .img-card {
+            margin: 20px;
+            padding: 10px;
+            background-color: #bfa9a9;
+            width: 200px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .img-card:hover {
+            transform: scale(1.05);
+        }
+
+        .img {
+            border-radius: 5px;
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        .img-name,
+        .price {
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .img-card {
+                width: 45%;
+                height: auto;
+            }
+
+            .img {
+                height: 80px;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .img-card {
+                width: 90%;
+                height: auto;
+                margin: 10px auto;
+            }
+
+            .img {
+                height: 60px;
+                margin-top: 10px;
+            }
+
+            .img-name {
+                font-size: 1.2em;
+            }
+
+            .price {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="head" src="cafe.jpeg" alt="Header Image">
+    <div class="container">
+        <div class="img-card">
+            <img src="special tea.jpeg" class="img" alt="Special Tea"><br>
+            <h1 class="img-name">Special Tea</h1>
+            <p>★★★★★</p>
+            <h2 class="price">Rs. <sup>₹</sup> 25</h2>
+        </div>
+
+        <div class="img-card">
+            <img src="black tea.jpeg" class="img" alt="Black Tea"><br>
+            <h1 class="img-name">Black Tea</h1>
+            <p>★★★★☆</p>
+            <h2 class="price">Rs. <sup>₹</sup> 30</h2>
+        </div>
+
+        <div class="img-card">
+            <img src="leamon tea.jpeg" class="img" alt="Lemon Tea"><br>
+            <h1 class="img-name">Lemon Tea</h1>
+            <p>★★★★★</p>
+            <h2 class="price">Rs. <sup>₹</sup> 49</h2>
+        </div>
+
+        <div class="img-card">
+            <img src="hot coffee.jpeg" class="img" alt="Hot Coffee"><br>
+            <h1 class="img-name">Hot Coffee</h1>
+            <p>★★★☆☆</p>
+            <h2 class="price">Rs. <sup>₹</sup> 99</h2>
+        </div>
+
+        <div class="img-card">
+            <img src="cold coffee.jpeg" class="img" alt="Cold Coffee">
+            <h1 class="img-name">Cold Coffee</h1>
+            <p>★★★★☆</p>
+            <h2 class="price">Rs. <sup>₹</sup> 199</h2>
+        </div>
+    </div>
+</body>
+
+</html>

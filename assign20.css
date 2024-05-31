@@ -3,8 +3,10 @@
     src: url(./font.ttf);
 }
 body{
-    background-color: rgb(237, 192, 133);
+    background-color: rgb(248, 253, 179);
+
 }
+
 .Nav-bar{
     width: 15%;
     height: 100vh;

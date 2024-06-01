@@ -3,9 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Login</title>
+        <title>Booking</title>
+        <link rel="stylesheet" href="./login.css">
+       
     </head>
     <body>
-        <h1>I am Booking Page</h1>
+        <div class="container-holder">
+            <div class="Nav-bar">
+                <div class="logo">Maharshtra <span class="red"> Travel</span></div>
+                <ul class="List">
+                    <li><a href="#">Home</a></li>  
+                    <li><a href="./pages/login.html">Login</a></li>
+                    <li><a href="./pages/booking.html">Booking</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-holder">
+            <div class="contain-parent">
+                <div class="form-function">
+                    <form>
+                        <div class="input-group">
+                            <label for="uname">Customer Name</label>
+                            <input type="text" id="uname" placeholder="customer name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="age">Age</label>
+                            <input type="text" id="age" placeholder="age" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="cno">Mobile No.</label>
+                            <input type="phone" id="cno" placeholder="phone number" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="gen">Gender</label>
+                            <input type="text" id="gen" placeholder="eg.male/female" required>
+                        </div>
+                       
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

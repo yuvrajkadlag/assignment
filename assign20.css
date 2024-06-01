@@ -2,57 +2,118 @@
     font-family: "myFont";
     src: url(./font.ttf);
 }
-body{
-    background-color: rgb(248, 253, 179);
-
-}
-
-.Nav-bar{
-    width: 15%;
-    height: 100vh;
-    background-color:rgb(173, 209, 74);
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "myFont";
 }
+body{
+    background-color: rgb(249, 249, 245);
+
+}
+
+.logo {
+    padding: 13px;
+    font-size: 1.8vw;
+    font-weight: 900;
+    color: tomato;
+}
+.red {
+    color: white
+    ;
+}
+.Nav-bar {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(45, 149, 150);
+    display: flex;
+    justify-content: space-between;
+}
+
 .List {
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     padding: 10px;
-    border-radius: 0%;
-   }
-
-.content{
-    background-color: aliceblue;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .List li {
-    
-    padding-right: 50%;
-    padding-left: 18%;
-    margin: 35px;
+    margin: 10px;
     list-style-type: none;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     text-transform: uppercase;
-    text-align: justify;
-    
-    background-color: rgb(235, 226, 226);  
 }
 
-.List li :hover{
-    background-color: rgb(165, 240, 147);
-    
+.List-footer img {
+    width: 30px;
 }
+
 .List li a {
     text-decoration: none;
     color: black;
 }
 
+.container {
+    position:absolute;
+    width: 100%;
+      height: 500px;
+      background-color: #2D9596;
 
+  }
+
+  .img-card {
+      margin: 20px;
+      margin-left: 30px;
+      padding: 10px;
+      position:sticky;
+      background-color: #d4e6ea;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      border-radius: 10px;
+      border: 1px solid black;
+
+  }
+
+  .img {
+      border-radius: 5px;
+      height: 100px;
+      position: sticky;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+  }
+
+  .img-name {
+      text-align: center;
+  }
+
+  .price {
+      text-align: center;
+  }
+
+  .img1{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    padding: 10px 10px;
+    width: 5vw;
+    font-size: 15px;
+    margin-left: 35%;
+    margin-top: 14px;
+    border-radius: 5px;
+    background-color: #9AD0C2;
+    border: none;
+    color: #F1FADA;
+    cursor: pointer;
+    
+
+}
+
+.btn:hover {
+    background-color: #2D9596;
+    
+}
